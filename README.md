@@ -9,6 +9,7 @@ The Mut.Log4net.EventHubAppender package can be installed using NuGet
 ## Configuration
 Before you can configure the Mut.Log4net.EventHubAppender jou must setup a Azure EventHub for the logevents (see Azure EventHub Setup for details).
 
+<pre>
 <code>
 &lt;configuration&gt;
   &lt;configSections&gt;
@@ -29,6 +30,7 @@ Before you can configure the Mut.Log4net.EventHubAppender jou must setup a Azure
   &lt;/log4net&gt;
 &lt;/configuration&gt;
 </code>
+</pre>
 
 ## Azure EventHub Setup
 1. Log on to the Azure portal, and click "+New" select "Hybrid Integration" and then click "Service Bus" in the "Hybrid Integration" blade (this will take you to the old " Azure classic portal").
