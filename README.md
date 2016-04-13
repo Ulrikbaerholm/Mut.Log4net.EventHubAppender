@@ -16,9 +16,9 @@ Before you can configure the Mut.Log4net.EventHubAppender jou must setup a Azure
   &lt;/configSections&gt;
   &lt;log4net&gt;
     &lt;root&gt;
-      &lt;level value="ALL" /&gt;
+      &lt;level value="ALL" /&gt; 
       &lt;appender-ref ref="EventHubAppender" /&gt;
-    &lt;/root&gt;
+      &lt;/root&gt;
     &lt;appender name="EventHubAppender" type="Mut.Log4net.EventHubAppender.EventHubAppender, Mut.Log4net.EventHubAppender"&gt;
       &lt;eventHubName value="logging" /&gt;
       &lt;eventHubConnectionString value="Endpoint=sb://[your-servicebusnamespace].servicebus.windows.net/;SharedAccessKeyName=SendEventsRule;SharedAccessKey=[YourSharedAccessKeyForSendEventsRule]" /&gt;
