@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35253406-A410-454B-8EF5-B4C441D278D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{119048CF-B0E7-4276-8BEF-5DCA1F3A6908}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mut.Log4net.EventHubAppender", "src\Mut.Log4net.EventHubAppender\Mut.Log4net.EventHubAppender.xproj", "{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FD593CF-4AFD-4C17-A2F3-C3B217BBAAEB} = {35253406-A410-454B-8EF5-B4C441D278D2}
+	EndGlobalSection
+EndGlobal

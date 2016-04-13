@@ -1,0 +1,24 @@
+{
+  "version": "1.0.1-*",
+  "description": "This is a log4net Appender for Azure Event Hub. Using the Azure Event Hub provides a scalable ingestion point for you log4net data.",
+  "authors": [ "Jimmy Tønners & Ulrik Bærholm" ],
+  "tags": [ "Log4net, Azure EventHub" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": {
+      "dependencies": {
+        "log4net": "2.0.5"
+      }
+    },
+    "net45": {
+      "dependencies": {
+        "log4net": "2.0.5"
+      }
+    }
+  },
+  "dependencies": {
+    "fastJSON": "2.1.15",
+    "WindowsAzure.ServiceBus": "3.1.7"
+  }
+}
