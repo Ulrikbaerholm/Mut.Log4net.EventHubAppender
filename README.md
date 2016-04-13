@@ -9,24 +9,26 @@ The Mut.Log4net.EventHubAppender package can be installed using NuGet
 ## Configuration
 Before you can configure the Mut.Log4net.EventHubAppender jou must setup a Azure EventHub for the logevents (see Azure EventHub Setup for details).
 
-<configuration>
-  <configSections>
-    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
-  </configSections>
-  <log4net>
-    <root>
-      <level value="ALL" />
-      <appender-ref ref="EventHubAppender" />
-    </root>
-    <appender name="EventHubAppender" type="Mut.Log4net.EventHubAppender.EventHubAppender, Mut.Log4net.EventHubAppender">
-      <eventHubName value="logging" />
-      <eventHubConnectionString value="Endpoint=sb://[your-servicebusnamespace].servicebus.windows.net/;SharedAccessKeyName=SendEventsRule;SharedAccessKey=[YourSharedAccessKeyForSendEventsRule]" />
-      <environment value="[Environment eg. Dev, Test, or Prod]" />
-      <application value="[NameOfYourApp]" />
-      <subsystem value="[SubSystem eg. WebSite]" />
-    </appender>
-  </log4net>
-</configuration>
+<code>
+&lt;configuration&gt;
+  &lt;configSections&gt;
+    &lt;section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" /&gt;
+  &lt;/configSections&gt;
+  &lt;log4net&gt;
+    &lt;root&gt;
+      &lt;level value="ALL" /&gt;
+      &lt;appender-ref ref="EventHubAppender" /&gt;
+    &lt;/root&gt;
+    &lt;appender name="EventHubAppender" type="Mut.Log4net.EventHubAppender.EventHubAppender, Mut.Log4net.EventHubAppender"&gt;
+      &lt;eventHubName value="logging" /&gt;
+      &lt;eventHubConnectionString value="Endpoint=sb://[your-servicebusnamespace].servicebus.windows.net/;SharedAccessKeyName=SendEventsRule;SharedAccessKey=[YourSharedAccessKeyForSendEventsRule]" /&gt;
+      &lt;environment value="[Environment eg. Dev, Test, or Prod]" /&gt;
+      &lt;application value="[NameOfYourApp]" /&gt;
+      &lt;subsystem value="[SubSystem eg. WebSite]" /&gt;
+    &lt;/appender&gt;
+  &lt;/log4net&gt;
+&lt;/configuration&gt;
+</code>
 
 ## Azure EventHub Setup
 1. Log on to the Azure portal, and click "+New" select "Hybrid Integration" and then click "Service Bus" in the "Hybrid Integration" blade (this will take you to the old " Azure classic portal").
