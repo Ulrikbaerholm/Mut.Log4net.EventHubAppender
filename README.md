@@ -4,6 +4,13 @@ This project contains the source for the Mut.Log4net.EventHubAppender
 ## Installing
 The Mut.Log4net.EventHubAppender package can be installed using NuGet
 
+To install Mut.Log4net.EventHubAppender, run the following command in the  Package Manager Console
+<pre>
+<code>
+PM&gt; Install-Package Mut.Log4net.EventHubAppender
+</code>
+</pre>
+
 [Add NuGet install command]
 
 ## Configuration
